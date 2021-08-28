@@ -3,7 +3,6 @@ import axios from "axios"
 import './Movie.css';
 import Row from './Row'
 
-var moviesApi = [];
 class Movie extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +19,6 @@ class Movie extends Component {
       }
     })
       .then((response) => {
-        // moviesApi = response.data;
         // update the state to reuse values
         this.setState({
           movie_list: response.data.movies
@@ -29,7 +27,6 @@ class Movie extends Component {
   }
 
   render() {
-    console.log(this.state.movie_list);
     return (
       <div className="outer-div">
         {this.state.movie_list.length ? <h1 className="movie-heading-section">Action</h1> : null}
