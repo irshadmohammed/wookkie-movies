@@ -1,0 +1,19 @@
+.outer-div {
+  margin-top: 15px;
+}
+
+.movie-container {
+  display: flex;
+}
+
+.movie-posters {
+  display: flex;
+  width: 50%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.movie-heading-section {
+  margin-left: 20px;
+}

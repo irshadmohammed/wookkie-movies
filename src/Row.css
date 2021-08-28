@@ -1,0 +1,16 @@
+.row {
+  margin-left: 20px;
+}
+
+.row__poster {
+  cursor: pointer;
+  width: 100%;
+}
+
+.row-content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 20px;
+}
